@@ -92,7 +92,8 @@ td{
 .confirmBtn{
     margin-left: 20px;
     margin-top: 20px; 
-    width: 180px;
+    width: 60%;
+    overflow: hidden;
     font-weight: bold;
 }
 
@@ -100,6 +101,9 @@ td{
     float: right; 
     width: 180px;
     font-weight: bold;
+}
+#backBtn{
+    width:30%;
 }
 .printBtn{
     width: 180px;
@@ -249,4 +253,7 @@ ul.imgGrid.columns-4 li {
 }
 #dish-type{
 	margin-left: 38%;
+}
+.deleteBtn{
+    margin-right: 6px;
 }
