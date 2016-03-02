@@ -27,21 +27,20 @@ var DinnerView = function(container, model){
 				
 				
 				var btn = closeBtns[i];
-				btn.onclick = function(){
+				/*btn.onclick = function(){
 					//alert(model.getFullMenu().length);
 					//alert(i);
 					
-					/* Get the exact */
 
 					var position=$(this).attr("id")[$(this).attr("id").length-1];
 					//alert(position);
 					model.getFullMenu().splice(position,1);
 
 
-					/* delete from the bottom
+					 delete from the bottom
 					var result= model.getFullMenu().pop();
 					alert(result.name);
-					*/
+					
 
 
 					//alert(model.getFullMenu());
@@ -50,10 +49,13 @@ var DinnerView = function(container, model){
 					
 					model.notifyObservers();
 					//dinnerTable.deleteRow(i);
-				};
+				};*/
 				
 			}
+		}else{
+			confirmDinner.disabled = true;
 		}
+
 	};
 
 	this.update = function(){
